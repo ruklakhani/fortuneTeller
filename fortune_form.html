@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <title>Fortune Teller</title>
+    </head>
+    <body> 
+        What's poppin! It's fortune time <em>BAYBEE!!!</em> Just fill out the form to find your fortune :^) 
+        <form action='/results' method='GET'>
+        <p>
+            What is your name? 
+            <input type='text' name='firstname'>
+            <br>
+        </p>
+        <p>
+            <label for='memes'>Do you like memes?</label>
+            <br>
+            <input type="radio" name="memes" value="yes"> 
+            duhhhhh
+            <br>
+            <input type="radio" name="memes" value="no"> 
+            nah, what a waste of time 
+            <br>
+            <input type="radio" name="memes" value="other"> 
+            sometimes...
+            <br>
+        </p>
+            <label for='memes'>What is the cutest dog breed? (from the given options)</label>
+            <br>
+            <select name="dogs">
+                <option value="pug">Pug</option>
+                <option value="corgi">Corgi</option>
+                <option value="italian greyhound">Italian Greyhound</option>
+                <option value="husky">Husky</option>
+            </select>
+        <p>
+            How are you feeling rn?
+            <br>
+            meh   
+            <input type="range" name="points" min="0" max="2">
+            amazing!
+            <br>
+        </p>
+        <button type='submit'>Submit!</button>
+        </form>
+    </body>
+</html>
