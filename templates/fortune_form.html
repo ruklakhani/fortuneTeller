@@ -6,9 +6,9 @@
     <body> 
         What's poppin! It's fortune time <em>BAYBEE!!!</em> Just fill out the form to find your fortune :^) 
         <form action='/results' method='GET'>
-        <p>
-            What is your name? 
-            <input type='text' name='firstname'>
+        <p> 
+            <label for='name'>What is your name?</label>
+            <input type='text' name='name'>
             <br>
         </p>
         <p>
@@ -24,7 +24,7 @@
             sometimes...
             <br>
         </p>
-            <label for='memes'>What is the cutest dog breed? (from the given options)</label>
+            <label for='dogs'>What is the cutest dog breed? (from the given options)</label>
             <br>
             <select name="dogs">
                 <option value="pug">Pug</option>
@@ -33,14 +33,14 @@
                 <option value="husky">Husky</option>
             </select>
         <p>
-            How are you feeling rn?
-            <br>
-            meh   
-            <input type="range" name="points" min="0" max="2">
-            amazing!
-            <br>
-        </p>
-        <button type='submit'>Submit!</button>
-        </form>
-    </body>
-</html>
+                <label for='mood'>How are you feeling rn?</label>
+                <br>
+                meh   
+                <input type="range" name="points" min="0" max="2">
+                amazing!
+                <br>
+            </p>
+            <button type='submit'>Submit!</button>
+            </form>
+        </body>
+    </html>
