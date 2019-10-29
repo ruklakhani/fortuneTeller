@@ -19,6 +19,9 @@ def results():
 
     if memes == "sometimes":
         fortune = "Enjoy yourself while you can"
+        dogs = " "
+    elif memes == "no": 
+        dogs = " "
     else:
         if dogs == "pug":
             fortune = "You might feel a little conjested,,, you possibly sick cutie! ;^)"
@@ -38,6 +41,7 @@ def results():
         'color': color,
         'memes': memes,
         'dogs': dogs,
+        'luckyNumber': luckyNumber,
         'fortune': fortune
     }
     return render_template('results.html', fortunes=fortunes)

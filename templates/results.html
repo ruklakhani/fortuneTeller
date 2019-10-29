@@ -1,6 +1,23 @@
 <!-- results.html -->
-{% extends 'base.html' %}
-
-{% block content %)
-
+{% extends 'base.html' %} 
+{% block content %}
+<p class='fortunes' style="color: {{ fortunes['color'] }}">
+Welcome, {{ fortunes['name'] }}! What's poppin?? Are you ready for your fortune?
+</p>
+<p class='fortunes'> {{ fortunes['fortune'] }}</p>
+<p class='fortunes'>
+    {% if fortunes['dogs'] == 'corgi' %}
+        <img src="{{ url_for('static', filename='corgi.jpg') }}">
+    {% endif %}
+    {% if fortunes['dogs'] == 'husky' %}
+        <img src="{{ url_for('static', filename='husky.jpg') }}">
+    {% endif %}
+    {% if fortunes['dogs'] == 'italianGreyhound' %}
+        <img src="{{ url_for('static', filename='iggy.jpg') }}">
+    {% endif %}
+    {% if fortunes['dogs'] == 'pug' %}
+        <img src="{{ url_for('static', filename='pug.jpg') }}">
+    {% endif %}
+    </p>
+<p class='fortunes' style="color: {{ fortunes['color'] }}">Lucky Number: {{ fortunes['lucky_number'] }}</p>
 {% endblock %}
